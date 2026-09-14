@@ -1,0 +1,23 @@
+- Create a project 
+- Then Create a View Controller using Command + Shift + L 
+- Open The editor and CLick on embed in to add the Navigation Controller 
+- Navigation COntrller is the first step to manage the transition b/w viewcontrollers
+- Delete the orignal View Controller 
+- Create a new Cocoa Touch Class for the first View COntroller  using Command + N 
+- Click on first View Controller and then Add its class it will auto complete itself just click enter 
+- Now Create another View Controller and repeat the same steps except adding the Navigation Controller 
+- create another cocoa touch class name it anything ex - SecondVC and then add it to the second view controller (the one which has no navigation controller)
+- Now click on the first View Controller and Press control then click and move the arrow to the second View Controller 
+- Then Select the Show option 
+- add a label on the second View Controller just write second pAGE OR sECOND SCREEN
+- Now Click on the Line between first View controller and second View controller Add a name like movetoSecondVC
+-then Split two screens on the XCode
+- add a button on the first View Controller 
+- and now control + Drag the button you added in the first view controller and then move it to its class file below override function 
+- it will ask to name it function name name anything 
+- select the type as UIButton 
+- Now inside this new fucntion add performSegue(segue: UIStoryboardSegue, sender: Any?) function
+- and pass the name of the segue you gave to the line between the two view controllers and if the name is empty it will throw error  and remove any? make it nil
+- Now Build the projecct using Command + B and run it using Command + R 
+- Now open the emulator click the button you added you will be moved to new screen "second Screen " 
+- Note ANy eror happens just delete whole project because it will throw thread error 
